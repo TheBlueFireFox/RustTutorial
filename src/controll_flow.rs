@@ -11,6 +11,23 @@ pub fn run() {
     let var = if 0 < 4 { true } else { false };
 
     // match
+    let var = 4;
+
+    let _ = match var {
+        1 => "1",
+        2 => "2",
+        3 | 4 => "3 or 4",
+        5..=8 => "5,6,7,8",
+        _ => "everything else", // must be exhaustive
+    };
+
+    let var = "hi";
+
+    let _ = match var {
+        "hi" => true,
+        "or" => false,
+        _ => false,
+    };
 
     // Loops:
     for i in 0..100 {}

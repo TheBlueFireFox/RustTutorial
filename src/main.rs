@@ -12,6 +12,10 @@ mod ownership;
 mod structs;
 // 06
 mod enums;
+// 07
+mod collections;
+// 08
+mod generics;
 
 fn main() {
     println!("hallo from rust");
